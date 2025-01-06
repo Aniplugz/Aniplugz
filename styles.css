@@ -1,0 +1,199 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Deep black background */
+    color: #ccc; /* Light grey text, offers good contrast */
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header styling */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #181818; /* Slightly lighter black for the header */
+    border-bottom: 1px solid #5e35b1; /* Purple accent line */
+  }
+  
+  .logo h1 {
+    color: #7e57c2; /* Light purple for logo */
+    font-weight: bold;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: #5e35b1; /* Purple background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  /* Search bar styling */
+  .search-bar input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #5e35b1;
+    border-radius: 20px;
+    background-color: #222; /* Dark input fields */
+    color: #fff;
+    transition: box-shadow 0.3s;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #7e57c2; /* Glowing effect when focused */
+  }
+  
+  .search-bar button {
+    border-radius: 20px;
+    background-color: #5e35b1;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 1rem;
+    margin-left: 0.4rem;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #7e57c2; /* Lighter purple on hover */
+  }
+  
+  /* Carousel */
+  .spotlight {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #5e35b1;
+  }
+  
+  .carousel-inner video {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    max-width: 45%;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2.5rem;
+    color: #5e35b1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .meta {
+    color: #7e57c2;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-buttons a {
+    border-radius: 20px;
+    background-color: #5e35b1;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-buttons a:hover {
+    background-color: #7e57c2;
+  }
+  
+  /* Trending section */
+  .trending-section {
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .trending-section h2 {
+    font-size: 1.5rem;
+    color: #f5abc9; /* Pink color for headings */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .trending-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0 3rem;
+  }
+  
+  .trending-panel {
+    position: relative;
+    width: 150px;
+    background-color: #2b293b; /* Dark panels for each anime */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, filter 0.3s;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .trending-panel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #3a3a3a;
+  }
+  
+  .trending-panel:hover {
+    transform: scale(1.03);
+  }
+  
+  .trending-panel.not-focused {
+    filter: grayscale(100%) brightness(80%);
+  }
+  
+  .vertical-title {
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center;
+    font-size: 0
+  }
